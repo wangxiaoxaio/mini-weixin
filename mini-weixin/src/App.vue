@@ -1,7 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    
     <router-view/>
+    <mu-container>
+      <mu-bottom-nav>
+      <mu-bottom-nav-item title="微信" icon="chat"></mu-bottom-nav-item>
+      <mu-bottom-nav-item title="通讯录" icon="contacts"></mu-bottom-nav-item>
+      <mu-bottom-nav-item title="发现" icon="explore"></mu-bottom-nav-item>
+      <mu-bottom-nav-item title="我" icon="perm_identity"></mu-bottom-nav-item>
+      </mu-bottom-nav>
+      
+      
+    </mu-container>
   </div>
 </template>
 
@@ -12,12 +22,11 @@ export default {
 </script>
 
 <style>
+@import url("//unpkg.com/muse-ui@3.0.0-rc.7/dist/muse-ui.css");
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width:100%;
 }
 </style>
